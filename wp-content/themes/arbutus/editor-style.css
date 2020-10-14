@@ -1,0 +1,662 @@
+/**
+ * Editor Styles for Arbutus
+ *
+ * This is a subset of the styles in style.css.
+ */
+
+
+/*--------------------------------------------------------------
+1.0 Resets
+--------------------------------------------------------------*/
+ol, ul {
+	list-style: none;
+}
+
+table { /* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+
+}
+
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+a img {
+	border: 0;
+}
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: hsl(220, 10%, 13%);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: Raleway, sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 18px;
+}
+
+p {
+	margin: 0 0 24px 0;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote,
+blockquote.wp-block-quote,
+.wp-block-quote {
+	margin: 0 0 24px 48px;
+}
+
+cite,
+.wp-block-quote__citation,
+.wp-block-quote cite,
+.wp-block-quote footer {
+	color: inherit;
+	font-size: 12px;
+	font-style: italic;
+}
+
+address {
+	margin: 0 0 24px;
+}
+
+pre {
+	background: hsl(220, 10%, 88%);
+	font-family: monospace;
+	font-size: 16px;
+	line-height: 1.2;
+	margin-bottom: 24px;
+	max-width: 100%;
+	overflow: auto;
+	padding: 24px;
+}
+
+code, kbd, tt, var {
+	font: 16px monospace;
+	background: rgba(0, 0, 0, .2);
+	padding: 2px 3px;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted hsl(220, 10%, 35%);
+	cursor: help;
+}
+
+mark, ins {
+	background: hsl(220, 10%, 88%);
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+hr {
+	background-color: hsl(220, 10%, 88%);
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: square;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 0;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+th {
+	font-weight: bold;
+	background: hsl(220, 10%, 88%);
+}
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+
+.button,
+.wp-block-button__link {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	background: hsl(220, 80%, 35%);
+	color: hsl(220, 10%, 100%);
+	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1;
+	padding: 13px 18px;
+	transition: .18s all ease-in-out;
+}
+
+.button:focus,
+.wp-block-button__link:focus,
+.button:hover,
+.wp-block-button__link:hover {
+	background: hsl(220, 10%, 13%);
+	color: hsl(220, 10%, 100%);
+}
+
+.button:active,
+.wp-block-button__link:active {
+	-webkit-transform: scale(.95);
+	-moz-transform: scale(.95);
+	transform: scale(.95);
+}
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+.alignleft,
+.wp-block-image .alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright,
+.wp-block-image .alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter,
+.wp-block-image .aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+
+/*--------------------------------------------------------------
+12.0 Media
+--------------------------------------------------------------*/
+img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+12.1 Captions
+--------------------------------------------------------------*/
+.wp-caption,
+.wp-block-image .figcaption {
+	margin-bottom: 24px;
+	max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+}
+
+.wp-caption-text,
+.wp-block-image figcaption,
+.blocks-gallery-caption,
+.wp-block-embed figcaption {
+	text-align: center;
+	margin: 16px 0;
+	color: inherit;
+	line-height: inherit;
+	font-size: 16px;
+}
+	text-align: center;
+	margin: 16px 0;
+	color: inherit;
+	line-height: inherit;
+	font-size: 16px;
+}
+
+/* Arbutus Styles */
+::selection {
+	background: hsl(220, 80%, 35%);
+	color: hsl(220, 0%, 100%);
+}
+
+.block-editor-block-list__layout .block-editor-block-list__block ::selection {
+	background: hsl(220, 80%, 35%);
+	color: hsl(220, 0%, 100%);
+}
+
+html .mceContentBody { /* classic editor only */
+	margin: 0;
+	padding: 0;
+	font: normal 16px/24px 'Open Sans', sans-serif;
+	background: hsl(220, 0%, 100%);
+	color: hsl(220, 10%, 13%);
+	width: 100%;
+	max-width: 660px;
+	margin: 0 auto;
+}
+
+/* Override block editor default styling */
+.mce-content-body {
+	font: normal 16px/24px 'Open Sans', sans-serif;
+	background: hsl(220, 0%, 100%);
+	color: hsl(220, 10%, 13%);
+}
+
+/* Main column width */
+.wp-block {
+	max-width: 660px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+	max-width: 1280px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+
+.editor-post-title__block .editor-post-title__input { /* Post title in block editor */
+	font-size: 36;
+	line-height: 1.5;
+	font-family: 'Raleway', serif;
+	font-weight: 400;
+	margin: 0 -1px 11px; /* account for border in editor styling */
+}
+
+a {
+	color: inherit;
+	transition: .12s all ease-in-out;
+	text-decoration: underline;
+}
+
+.format-quote a,
+a.button {
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: hsl(220, 80%, 35%);
+	text-decoration: none;
+}
+
+.post-format-aside {
+	background: hsl(220, 10%, 88%);
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.post-format-aside .inner p:first-child:first-letter {
+	background: hsl(220, 10%, 13%);
+	color: hsl(220, 0%, 100%);
+	padding: 4px 8px;
+	font-weight: bold;
+}
+
+.post-format-quote {
+	background: hsl(220, 10%, 13%);
+	color: hsl(220, 0%, 100%);
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.post-format-quote a {
+	color: hsl(220, 10%, 88%);
+}
+
+.post-format-quote blockquote {
+	font-size: 48px;
+	line-height: 64px;
+	margin-left: 96px;
+	position: relative;
+}
+
+.post-format-quote blockquote:before {
+	content: "\201C";
+	position: absolute;
+	left: -96px;
+	font-size: 64px;
+}
+
+.post-format-gallery {
+	background: hsl(220, 10%, 13%);
+	color: hsl(220, 0%, 100%);
+}
+
+.wp-block[data-type="core/gallery"] { /* Block editor doesn't provide the editor class format. We can only quess that a gallery block might be in a gallery-format post, and style at lest the gallery with the correct color. */
+	background: hsl(220, 10%, 13%);
+	color: hsl(220, 0%, 100%);
+}
+
+.post-format-gallery a {
+	color: hsl(220, 10%, 88%);
+}
+
+/* Galleries - classic editor only */
+.gallery,
+.wp-block-gallery {
+	margin-bottom: 20px;
+	margin-left: -4px;
+}
+
+.gallery-item {
+	float: left;
+	margin: 0 8px 8px 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.wp-block-gallery .blocks-gallery-item {
+	margin: 0 8px 8px 0;
+}
+
+.gallery-columns-1.gallery-size-medium,
+.gallery-columns-1.gallery-size-thumbnail,
+.gallery-columns-2.gallery-size-thumbnail {
+	display: table;
+	margin: 0 auto 20px;
+}
+
+.gallery-columns-1 .gallery-item,
+.gallery-columns-2 .gallery-item {
+	text-align: center;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 32%;
+	max-width: -webkit-calc(33.33% - 8px);
+	max-width:         calc(33.33% - 8px);
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 23%;
+	max-width: -webkit-calc(25% - 8px);
+	max-width:         calc(25% - 8px);
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 19%;
+	max-width: -webkit-calc(20% - 8px);
+	max-width:         calc(20% - 8px);
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 15%;
+	max-width: -webkit-calc(16.7% - 8px);
+	max-width:         calc(16.7% - 8px);
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 13%;
+	max-width: -webkit-calc(14.28% - 8px);
+	max-width:         calc(14.28% - 8px);
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 11%;
+	max-width: -webkit-calc(12.5% - 8px);
+	max-width:         calc(12.5% - 8px);
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 9%;
+	max-width: -webkit-calc(11.1% - 8px);
+	max-width:         calc(11.1% - 8px);
+}
+
+.gallery-columns-1 .gallery-item:nth-of-type(1n),
+.gallery-columns-2 .gallery-item:nth-of-type(2n),
+.gallery-columns-3 .gallery-item:nth-of-type(3n),
+.gallery-columns-4 .gallery-item:nth-of-type(4n),
+.gallery-columns-5 .gallery-item:nth-of-type(5n),
+.gallery-columns-6 .gallery-item:nth-of-type(6n),
+.gallery-columns-7 .gallery-item:nth-of-type(7n),
+.gallery-columns-8 .gallery-item:nth-of-type(8n),
+.gallery-columns-9 .gallery-item:nth-of-type(9n) {
+	margin-right: 0;
+}
+
+.gallery-columns-1.gallery-size-medium figure.gallery-item:nth-of-type(1n+1),
+.gallery-columns-1.gallery-size-thumbnail figure.gallery-item:nth-of-type(1n+1),
+.gallery-columns-2.gallery-size-thumbnail figure.gallery-item:nth-of-type(2n+1),
+.gallery-columns-3.gallery-size-thumbnail figure.gallery-item:nth-of-type(3n+1) {
+	clear: left;
+}
+
+.gallery-caption,
+.wp-block-gallery .blocks-gallery-image figcaption,
+.wp-block-gallery .blocks-gallery-item figcaption {
+	box-sizing: border-box;
+	color: hsl(220, 0%, 100%);
+	background: hsl(220, 10%, 13%);
+	font-size: 14px;
+	line-height: 1.2;
+	margin: 0;
+	padding: 7px;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	text-align: left;
+	width: 100%;
+}
+
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+
+/* Block Galleries */
+.wp-block-gallery .blocks-gallery-item {
+	justify-content: start;
+}
+
+.wp-block-gallery .blocks-gallery-item figure,
+.wp-block-gallery .blocks-gallery-item image {
+	display: block;
+	height: fit-content;
+}
+
+
+/* Audio/video formats */
+.post-format-audio,
+.post-format-video {
+	background: hsl(220, 10%, 88%);
+}
+
+
+/* media */
+.wp-playlist-item {
+	padding: 11px 3px;
+}
+
+.wp-playlist-item-length {
+	top: 9px;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-current {
+	background: hsl(220, 80%, 35%);
+}
+
+.mejs-container {
+	margin-bottom: 24px;
+}
+
+
+/* Media Queries */
+@-ms-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+}
+
+@media screen and (max-width:600px) {
+	.post-format-quote blockquote {
+		font-size: 24px;
+		line-height: 36px;
+	}
+}
