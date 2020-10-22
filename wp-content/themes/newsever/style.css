@@ -6,7 +6,7 @@ Author URI: https://www.afthemes.com/
 Requires PHP: 5.6
 Tested up to: WordPress 5.5
 Description: Newsever is an ideal WordPress theme for Best Responsive News and Magazine Site. The theme comes with Default, Dark and Light color mode, which enables you to present articles and blog posts with the trending appearance. You can build your website as you want and preview the changes using live customizer options and custom widgets to create a great news website. It is compatible with the Gutenberg WordPress blocks and RTL along with the plugin WooCommerce that lets you incorporate an online shop with our newspaper design. The theme is great for blogging and ideal for a news site, newspaper, magazine, publishing or review site, as it has many useful features that involve creating an amazing looking newsportal. The theme is well designed to rank your website in the top of the search engines and users can receive outstanding support from the team if any problems occur when using the theme. There are number of demos available in this theme so choose the one you like and start to build a website. See our demos: https://afthemes.com/newsever-an-ideal-wordpress-theme-for-best-responsive-news-and-magazine-sites/
-Version: 1.0.7
+Version: 1.0.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: newsever
@@ -2602,6 +2602,8 @@ input.search-submit {
     display: flex;
     align-items: center;
 }
+.aft-flash-slide > div,
+.js-marquee-wrapper {display: flex;align-items: center;}
 
 .exclusive-posts .marquee a {
     padding: 0 15px;
@@ -2611,6 +2613,7 @@ input.search-submit {
     line-height: normal;
     color: #fff;
     font-weight: 600;
+    flex-shrink: 0;
 }
 
 .exclusive-posts .marquee a span.circle-marq {
@@ -5786,6 +5789,7 @@ p.instagram-username {
     opacity: 0.5;
 }
 .insta-item .insta-tb {
+    font-size: 28px;
     padding: 30px;
     height: 100%;
     width: 100%;

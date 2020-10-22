@@ -116,6 +116,11 @@ License: Creative Commons CC0 license.
 Source: Self Created - GPL License
 
 == Changelog ==
+= 1.1.3 - October 17 2020 =
+* Fixed width in mobile layout
+* Enabled search in mobile layout
+* Fixed some minor css issues
+
 = 1.1.2 - September 05 2020 =
 * Fixed Keyboard navigation for category selection
 

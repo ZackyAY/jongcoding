@@ -2307,6 +2307,10 @@ blockquote {
 
 @media screen and (max-width: 767px) {
     .ct-menu-search {
+        right: 0;
+        left: auto;
+    }
+    .refined-magazine-header-left-logo-wrapper .ct-menu-search{
         display: none;
     }
 
@@ -3853,8 +3857,17 @@ body.admin-bar .ct-sticky {
     padding-left: 30px;
 }
 
+.ct-show-search{
+    position: relative;
+    padding-left: 30px;
+}
+
 @media screen and (max-width: 767px) {
 
+    .container-inner{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
     .ct-show-search{
         padding-left: 0;
     }

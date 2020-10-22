@@ -574,7 +574,10 @@
     {
         if (has_post_thumbnail($post_id)) {
             $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), $size);
-            $url = $thumb['0'];
+            $url = '';
+            if(isset($thumb)){
+                $url = $thumb['0'];
+            }
         } else {
             $url = '';
         }

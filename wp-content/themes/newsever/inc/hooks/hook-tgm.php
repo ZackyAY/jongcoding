@@ -16,8 +16,18 @@ if ( ! function_exists( 'newsever_recommended_plugins' ) ) :
 
         $plugins = array(
             array(
-                'name'     => esc_html__( 'Blockspare - Beautiful Page Building Blocks for WordPress', 'newsever' ),
+                'name'     => esc_html__( 'Blockspare - Beautiful Page Building Gutenberg Blocks for WordPress', 'newsever' ),
                 'slug'     => 'blockspare',
+                'required' => false,
+            ),
+            array(
+                'name'     => esc_html__( 'Latest Posts Block Lite', 'newsever' ),
+                'slug'     => 'latest-posts-block-lite',
+                'required' => false,
+            ),
+            array(
+                'name'     => esc_html__( 'Magic Content Box Lite', 'newsever' ),
+                'slug'     => 'magic-content-box-lite',
                 'required' => false,
             ),
             array(

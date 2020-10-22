@@ -64,34 +64,35 @@ if (!function_exists('newsever_banner_exclusive_posts')):
                         <div class="exclusive-slides" dir="ltr">
                             <?php
                             if ($all_posts->have_posts()) : ?>
-                            <div class='marquee <?php echo esc_attr($em_ticker_news_mode); ?>' data-speed='80000'
-                                 data-gap='0' data-duplicated='true' data-direction="<?php echo esc_attr($dir); ?>">
-                                <?php
-                                while ($all_posts->have_posts()) : $all_posts->the_post();
-                                    global $post;
-                                    $url = newsever_get_freatured_image_url($post->ID, 'thumbnail');
-                                    ?>
-                                    <a href="<?php the_permalink(); ?>">
-                                        <?php if ($show_trending == true): ?>
+                                <div class='marquee <?php echo esc_attr($em_ticker_news_mode); ?>' data-speed='80000'
+                                     data-gap='0' data-duplicated='true' data-direction="<?php echo esc_attr($dir); ?>">
+                                    <?php
+                                    while ($all_posts->have_posts()) : $all_posts->the_post();
+                                        global $post;
+                                        $url = newsever_get_freatured_image_url($post->ID, 'thumbnail');
+                                        ?>
+                                        <a href="<?php the_permalink(); ?>">
+                                            <?php if ($show_trending == true): ?>
 
-                                        <?php endif; ?>
+                                            <?php endif; ?>
 
-                                        <span class="circle-marq">
+                                            <span class="circle-marq">
                                         <?php if ($url) { ?>
                                             <img src="<?php echo esc_url($url); ?>"
                                                  alt="<?php the_title_attribute(); ?>">
                                         <?php } ?>
                                     </span>
 
-                                        <?php the_title(); ?>
-                                    </a>
-                                <?php
+                                            <?php the_title(); ?>
+                                        </a>
+                                    <?php
 
-                                endwhile;
-                                endif;
-                                wp_reset_postdata();
-                                ?>
-                            </div>
+                                    endwhile;
+
+                                    wp_reset_postdata();
+                                    ?>
+                                </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -99,7 +100,6 @@ if (!function_exists('newsever_banner_exclusive_posts')):
             <!-- Excluive line END -->
         <?php
         endif;
-
 
 
     }

@@ -4,7 +4,7 @@ Theme URI: https://www.candidthemes.com/themes/refined-magazine-free-magazine-wo
 Author: candidthemes
 Author URI: http://www.candidthemes.com/
 Description: Refined Magazine is a free magazine WordPress theme. It is easy to use, customize and lightweight WordPress theme. In addition to that, this theme comes with one click demo import option, 9 added custom widgets and unlimited color possibilites. Furthermore, Refined Magazine is advertisement ready WordPress theme with SEO optimized code. Besides that, this theme support major and popular plugins. This free theme has best layout for blog column, home page advertisement area, related posts, etc. Similiarly, it has meta options, header and footer options, sidebar options, individual sidebar for single post and many more. This theme is Gutenberg ready, RTL compatible and translation ready WP theme. View Demos: https://refined.candidthemes.com/
-Version: 1.1.2
+Version: 1.1.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: refined-magazine
@@ -2334,6 +2334,10 @@ blockquote {
 
 @media screen and (max-width: 767px) {
     .ct-menu-search {
+        right: auto;
+        left: 0;
+    }
+    .refined-magazine-header-left-logo-wrapper .ct-menu-search{
         display: none;
     }
 
@@ -3899,6 +3903,10 @@ body.admin-bar .ct-sticky {
 
 @media screen and (max-width: 767px) {
 
+    .container-inner{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
     .ct-show-search{
         padding-right: 0;
     }

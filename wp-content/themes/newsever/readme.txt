@@ -3,7 +3,7 @@
 Contributors: afthemes
 Requires PHP: 5.6
 Tested up to: 5.5
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, custom-header, translation-ready, theme-options, threaded-comments
@@ -37,6 +37,12 @@ Description: Newsever is an ideal WordPress theme for Best Responsive News and M
 Newsever includes support for Infinite Scroll in Jetpack.
 
 == Change log ==
+= 1.0.8 - Oct 14 2020 =
+* Fixed exclusive news design on empty posts
+* Fixed category color design
+* Fixed widget title border color issue
+* Fixed some design glitch
+
 = 1.0.7 - Sept 12 2020 =
 * Fixed some design glitch
 
