@@ -5,7 +5,6 @@ namespace Nextend\WordPress;
 
 
 use Nextend\Framework\Pattern\SingletonTrait;
-use Nextend\SmartSlider3\Platform\WordPress\Shortcode\Shortcode;
 
 class OutputBuffer {
 
@@ -51,15 +50,6 @@ class OutputBuffer {
         }
 
         /**
-         * Fix for Gravity Forms MC Unique ID Generator Field
-         * @url https://wordpress.org/plugins/gf-mc-unique-id-generator-field/
-         */
-        if (defined('MCGFUIDGEN_PLUGIN_VERSION')) {
-            remove_action('init', 'mcgfuidgen_head', 0);
-            add_action('init', 'mcgfuidgen_head', 1000000);
-        }
-
-        /**
          * Fix for KeyCDN cache enabled
          * @url https://wordpress.org/plugins/cache-enabler/
          */
@@ -81,6 +71,29 @@ class OutputBuffer {
                 $this,
                 'prepareOutput'
             ));
+        }
+
+        /**
+         * Fix for Speed booster Pack
+         * @url https://wordpress.org/plugins/speed-booster-pack/
+         */
+        if (defined('SBP_VERSION')) {
+            add_filter('sbp_output_buffer', array(
+                $this,
+                'prepareOutput'
+            ));
+        }
+
+        if (class_exists('PagespeedNinja')) {
+            /**
+             * @see SSDEV-2358
+             */
+            add_action('template_redirect', function () {
+                ob_start(array(
+                    $this,
+                    "outputCallback"
+                ));
+            });
         }
     }
 

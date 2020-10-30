@@ -941,7 +941,7 @@ img.img-search-none-risult{
 }
 add_action( 'wp_head', 'pepe_lite_customizer_css' ); // End Customizer CSS
 
-?>
+
 
 
 

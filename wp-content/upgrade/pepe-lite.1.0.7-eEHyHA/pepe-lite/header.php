@@ -25,17 +25,3 @@
       <!-- Layout Header -->
       <?php get_template_part('sections/header/sector',esc_attr(get_theme_mod('pepe_mod_sector_header','header-one' )));?>       
 <div id="content" class="site-content <?php echo esc_attr(get_theme_mod('pepe_layout_site','container-fluid' ));?> pepe-cont-large">
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-

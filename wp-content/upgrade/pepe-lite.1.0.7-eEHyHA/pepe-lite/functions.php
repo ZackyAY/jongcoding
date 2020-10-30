@@ -879,8 +879,3 @@ add_filter( 'pt-ocdi/plugin_page_setup', 'pepe_lite_plugin_page_setup' );
 
 // No Banner 
 add_filter( 'pt-ocdi/disable_pt_branding', '__return_true' );
-
-
-
-
-

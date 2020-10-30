@@ -16,6 +16,10 @@ class AdminHelper {
 
     public function __construct() {
 
+        add_action('admin_init', function(){
+            require_once dirname(__FILE__) . '/blackfriday.php';
+        });
+
         add_action('init', array(
             $this,
             'action_init'

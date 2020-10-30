@@ -5,7 +5,6 @@
 * @package   pepe-lite
 */
 
-
 get_header();?>
 
 <!-- Section Card Primary -->
@@ -26,4 +25,3 @@ endif;
 endif;
 
 get_footer(); ?>
-

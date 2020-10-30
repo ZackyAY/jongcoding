@@ -11,7 +11,7 @@
 <div class="at-header-admin">
       <div class="at-logo-admin">
 		   	<h2><?php echo esc_html__('Pepe Lite','pepe-lite');?></h2>
-		  	<span><?php echo esc_html__('V 1.0.6','pepe-lite');?></span>
+		  	<span><?php echo esc_html__('V 1.0.7','pepe-lite');?></span>
 		  </div>
 		   <div class="at-logo-icon-admin">
 		   	<span class="dashicons dashicons-screenoptions"></span>

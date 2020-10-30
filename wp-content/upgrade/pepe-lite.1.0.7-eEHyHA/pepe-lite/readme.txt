@@ -2,14 +2,14 @@
 
 Theme Name: Pepe Lite
 Contributors:franchidesign
-Version: 1.0.6
+Version: 1.0.7
 Requires at least: 4.7
 Tested up to: 5.0.3
 Requires PHP: 5.4
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: pepe-lite
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 Tags: one-column, two-columns ,right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets,  theme-options, threaded-comments, translation-ready, full-width-template, custom-logo, blog, news
 
 == Description ==
@@ -58,6 +58,9 @@ Pepe Lite is distributed under the terms of the GNU GPL
 
 = v 1.0.6 - October 11 2020 =
 * Add Block in Home Page
+
+= v 1.0.7 - October 26 2020 =
+* Fixed some bugs
 
 
 
